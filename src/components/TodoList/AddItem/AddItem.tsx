@@ -1,4 +1,5 @@
 import { Component, createSignal } from "solid-js";
+import "./AddItem.css";
 
 interface AddItemProps {
   addTodo: (newTodo: string) => void;
@@ -21,10 +22,13 @@ const AddItem: Component<AddItemProps> = (props) => {
   };
 
   return (
-    <div>
-      <label for="new-todo">New todo</label>
+    <div class="additem__container">
+      <label class="additem__label" for="new-todo">
+        New todo
+      </label>
       <br />
       <input
+        class="additem__input"
         onKeyDown={handleKeyDown}
         id="new-todo"
         placeholder="Enter new todo"

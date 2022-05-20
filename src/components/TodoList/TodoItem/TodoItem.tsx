@@ -1,4 +1,5 @@
 import { Component } from "solid-js";
+import "./TodoItem.css";
 
 interface TodoItemProps {
   todo: string;
@@ -6,7 +7,14 @@ interface TodoItemProps {
 }
 
 const TodoItem: Component<TodoItemProps> = (props) => {
-  return <div onClick={() => props.handleClick(props.todo)}>{props.todo}</div>;
+  return (
+    <div
+      class="todoitem__container"
+      onClick={() => props.handleClick(props.todo)}
+    >
+      {props.todo}
+    </div>
+  );
 };
 
 export default TodoItem;

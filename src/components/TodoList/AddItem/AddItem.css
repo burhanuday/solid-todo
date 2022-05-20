@@ -1,0 +1,17 @@
+.additem__container {
+  margin: 1em 0;
+  padding: 1em;
+  width: 400px;
+  background-color: white;
+}
+
+.additem__label {
+  font-size: 0.8rem;
+}
+
+.additem__input {
+  border: none;
+  padding: 0.5em 1em;
+  margin-top: 0.3em;
+  width: 100%;
+}

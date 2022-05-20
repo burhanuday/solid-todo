@@ -1,6 +1,7 @@
 import { Component, createSignal, For } from "solid-js";
 import AddItem from "./AddItem/AddItem";
 import TodoItem from "./TodoItem/TodoItem";
+import "./TodoList.css";
 
 const TodoList: Component = () => {
   const [todos, setTodos] = createSignal<string[]>([]);
@@ -16,7 +17,7 @@ const TodoList: Component = () => {
   return (
     <div>
       <AddItem addTodo={addTodo} />
-      <ul>
+      <ul class="todolist__container">
         <For each={todos()} fallback={<div>No todos</div>}>
           {(item, index) => (
             <li data-index={index()}>

@@ -1,0 +1,10 @@
+.todo__container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 20vh;
+}
